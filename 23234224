@@ -2314,6 +2314,9 @@ local function createMinesweeper(gridSize, numMines)
     })
     library:make_resizable(mine)
 
+    table.insert(library.main_frame, mine)
+
+
     -- Title
     local name = library:create("TextLabel", {
         Parent = mine,
